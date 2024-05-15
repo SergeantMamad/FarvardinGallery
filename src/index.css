@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "IranSans";
+  src: url("../public/fonts/IRANSansWeb.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "IranSans";
+  src: url("../public/fonts/IRANSansWeb_Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "IranSans";
+  src: url("../public/fonts/IRANSansWeb_Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "IranSans";
+  src: url("../public/fonts/Sahel-Light-FD.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Sahel";
+  src: url("../public/fonts/Sahel-FD.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Sahel";
+  src: url("../public/fonts/Sahel-SemiBold-FD.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Sahel";
+  src: url("../public/fonts/Sahel-Bold-FD.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Sahel";
+  src: url("../public/fonts/Sahel-Black-FD.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Nastaliq";
+  src: url("../public/fonts/IranNastaliq.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Sahel";
+}
+
+.title {
+  font-family: "Nastaliq";
+}
+
+.artsub {
+  display: none;
+}
+
+.art:hover .artsub {
+  display: block;
+}
+
+.artsub p {
+  cursor: pointer;
+  padding-bottom: 14px;
+  margin-top: 0.6rem;
+  transition: all 0.2s;
+  border-bottom: 2px rgb(30 41 59) solid;
+}
+
+.artsub p:hover {
+  border-bottom: 2px rgb(16 185 129) solid;
+  transition: all 0.2s;
+}
+
+.headerimg {
+  filter: blur(1.5px);
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.maintext {
+  background: linear-gradient(to right, #10b981, #00a38c, #008c8d, #007584);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slider {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.slider.active {
+  opacity: 100;
+  transition: all 0.5s;
+}
+
+.wall {
+  background-image: url("/images/housewall.jpg");
+}
+
+
+.gridParagraph {
+  opacity: 0.75;
+  transform: translateY(0px);
+  transition: transform 0.5s;
+}
+
+.gridItem:hover .gridParagraph {
+  opacity: 0.75;
+  transform: translateY(-100px);
+  transition: transform 0.5s;
+}
+
+.gridItem img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.gridItem:hover img {
+  filter: grayscale(0%);
+  transition: filter 0.5s ease-in-out;
+}
+
+.imageGrid {
+  transition: height 0.5s ease-in;
+}
