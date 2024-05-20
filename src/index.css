@@ -173,6 +173,12 @@ option:not([value=""]) {
   background-size: cover;
 }
 
-input:not(:placeholder-shown) {
+input:not(:placeholder-shown) , textarea:not(:placeholder-shown) {
   border-color: rgb(5 150 105);
+}
+
+
+.imagecontainer:hover p {
+  opacity: 1;
+  transition: all 0.3s ease-in;
 }

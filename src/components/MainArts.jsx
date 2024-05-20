@@ -1,7 +1,9 @@
-import { useEffect, useRef, useState } from "react"
+import { useContext, useEffect, useRef, useState } from "react"
 import { mainArtsObj } from "./Mainartsobj"
-const MainArts = ({liked,setLiked}) => {
+import { LikeContext } from "../providers/LikeProvider"
+const MainArts = () => {
   const mainArtsRef = useRef(null)
+  const {liked,setLiked} = useContext(LikeContext)
   function scrollRight() {
     return (mainArtsRef.current.scrollLeft += 360)
   }

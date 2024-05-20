@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { specificObj } from "./Specificobj"
-const Specific = ({ liked, setLiked }) => {
+import { LikeContext } from "../providers/LikeProvider"
+const Specific = () => {
   const [specificCategory, setspecificCategory] = useState("طبیعت")
-  const [content, setContent] = useState(null)
+  const {liked,setLiked} = useContext(LikeContext)
   function handleLiked(id, title, pic, category, artist) {
     if (!liked.find((liked) => liked.id == id)) {
       setLiked((prevLiked) => [
@@ -19,7 +20,6 @@ const Specific = ({ liked, setLiked }) => {
       setLiked((prevLiked) => prevLiked.filter((prevLike) => prevLike.id != id))
     }
   }
-  let data = <div></div>
   return (
     <div className="flex flex-col">
       <div className="flex justify-start gap-4 mt-2">
