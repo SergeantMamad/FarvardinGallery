@@ -365,7 +365,7 @@ const ShowProducts = () => {
             </div>
           </div>
           <button className="font-bold text-emerald-500 border border-emerald-500 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-400 w-[95.5%] mr-[16px] mt-3 text-center">
-            ارسال
+            فیلتر کنید
           </button>
         </div>
       )}
