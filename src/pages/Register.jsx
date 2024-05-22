@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "../index.css"
 import Starfield from "react-starfield"
+import { Link } from "react-router-dom"
 const Register = () => {
   const [userType, setUserType] = useState("خریداران")
   function handleInput(target) {
@@ -35,9 +36,11 @@ const Register = () => {
           </div>
           <div className="absolute left-1/2 -translate-x-1/2 bottom-7 text-center w-full">
             <p className="text-xl text-white font-bold">اکانت ثبت شده دارید؟</p>
-            <button className="font-bold text-white border border-white h-max px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-700 mx-auto mt-[5px]">
-              لاگین کنید
-            </button>
+            <Link to="/Login">
+              <button className="font-bold text-white border border-white h-max px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-700 mx-auto mt-[5px]">
+                لاگین کنید
+              </button>
+            </Link>
           </div>
         </div>
         <div
@@ -399,6 +402,7 @@ const Register = () => {
                 />
               </div>
             </div>
+
             <button className="font-bold text-emerald-500 border border-emerald-500 h-max px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-300 w-[80%] mx-auto">
               ثبت نام
             </button>

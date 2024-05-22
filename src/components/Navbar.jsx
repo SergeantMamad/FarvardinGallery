@@ -5,11 +5,13 @@ import { Link } from "react-router-dom"
 const Navbar = () => {
   const [login, setLogin] = useState(false)
   const [favPanel, setFavPanel] = useState(false)
-  const {liked,setLiked} = useContext(LikeContext)
+  const { liked, setLiked } = useContext(LikeContext)
   return (
-    <div className="fixed w-full z-50 h-[80px] bg-black text-white shadow-2xl">
+    <div className="sticky top-0 w-full z-50 h-[80px] bg-black text-white shadow-2xl">
       <div className="max-w-[1600px] flex items-center justify-between mx-auto h-full">
-        <p className="title text-3xl">گالری فروردین</p>
+        <Link to="/">
+          <p className="title text-3xl">گالری فروردین</p>
+        </Link>
         <input
           className="outline-none bg-zinc-900 w-[700px] py-2 px-4 rounded-lg border border-zinc-900 focus:border-emerald-500 transition-all duration-500"
           placeholder="جست و جو کنید"
@@ -27,7 +29,7 @@ const Navbar = () => {
                 dir="rtl"
               >
                 <p className="hover:text-emerald-500">نقاشی</p>
-                <p className="hover:text-emerald-500">خطاطی</p>
+                <Link to="/Khatati"><p className="hover:text-emerald-500">خطاطی</p></Link>
                 <p className="hover:text-emerald-500">عکاسی</p>
                 <p className="hover:text-emerald-500">طراحی</p>
                 <p className="hover:text-emerald-500">کلاژ</p>

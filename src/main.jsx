@@ -14,6 +14,8 @@ import UploadArt from "./pages/UploadArt.jsx"
 import LikeProvider from "./providers/LikeProvider.jsx"
 import ShowPage from "./pages/ShowPage.jsx"
 import Navbar from "./components/Navbar.jsx"
+import ShowProducts from "./pages/ShowProducts.jsx"
+import Khatati from "./pages/Khatati.jsx"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,7 +25,9 @@ const router = createBrowserRouter(
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />} />
       <Route path="/upload" element={<UploadArt />} />
+      <Route path="/showproducts" element={<ShowProducts />} />
       <Route path="/showpage" element={<ShowPage />} />
+      <Route path="/khatati" element={<Khatati />} />
     </>
   )
 )

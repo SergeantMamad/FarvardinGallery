@@ -1,6 +1,7 @@
 import { useState } from "react"
 import "../index.css"
 import Starfield from "react-starfield"
+import { Link } from "react-router-dom"
 
 const Login = () => {
   return (
@@ -140,9 +141,11 @@ const Login = () => {
           </div>
           <div className="absolute left-1/2 -translate-x-1/2 bottom-7 text-center w-full">
             <p className="text-xl text-white font-bold">اکانتی ندارید؟</p>
-            <button className="font-bold text-white border border-white h-max px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-700 mx-auto mt-[5px]">
-              ثبت نام کنید
-            </button>
+            <Link to="/register">
+              <button className="font-bold text-white border border-white h-max px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-700 mx-auto mt-[5px]">
+                ثبت نام کنید
+              </button>
+            </Link>
           </div>
         </div>
       </div>

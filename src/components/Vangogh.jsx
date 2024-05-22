@@ -1,17 +1,18 @@
-import { useContext, useEffect, useRef, useState } from "react"
-import { mainArtsObj } from "./Mainartsobj"
+import { useContext, useRef } from "react"
 import { LikeContext } from "../providers/LikeProvider"
-const MainArts = () => {
-  const mainArtsRef = useRef(null)
-  const {liked,setLiked} = useContext(LikeContext)
+import { vanGoghObj } from "./Vangoghobj"
+
+const Vangogh = () => {
+  const VangoghRef = useRef(null)
+  const { liked, setLiked } = useContext(LikeContext)
   function scrollRight() {
-    return (mainArtsRef.current.scrollLeft += 360)
+    return (VangoghRef.current.scrollLeft += 360)
   }
   function scrollLeft() {
-    return (mainArtsRef.current.scrollLeft -= 360)
+    return (VangoghRef.current.scrollLeft -= 360)
   }
 
-  function handleLiked(id, title, pic,category,artist) {
+  function handleLiked(id, title, pic, category, artist) {
     console.log(id)
     if (!liked.find((liked) => liked.id == id)) {
       setLiked((prevLiked) => [
@@ -20,8 +21,8 @@ const MainArts = () => {
           id: id,
           title: title,
           pic: pic,
-          category:category,
-          artist:artist
+          category: category,
+          artist: artist,
         },
       ])
     } else {
@@ -64,47 +65,47 @@ const MainArts = () => {
       </svg>
       <div
         className="flex mt-10 gap-7 scroll-smooth relative overflow-x-hidden"
-        ref={mainArtsRef}
+        ref={VangoghRef}
       >
-        {Object.keys(mainArtsObj).map((index) => (
+        {Object.keys(vanGoghObj).map((index) => (
           <div className="min-w-[350px] bg-zinc-100">
             <div className="p-2 py-8 wall">
               <img
-                src={`${mainArtsObj[index].image}`}
+                src={`${vanGoghObj[index].image}`}
                 className="w-[210px] h-[210px] object-contain mx-auto transition-all hover:scale-125 border-[10px] border-black bg-white shadow-xl"
                 alt=""
               />
             </div>
             <div className="mt-2">
               <p className="text-lg text-center font-bold">
-                {mainArtsObj[index].name}
+                {vanGoghObj[index].name}
               </p>
               <div className="flex justify-between px-3">
                 <p className="text-sm font-semibold">
-                  نوع رنگ : {mainArtsObj[index].color}
+                  نوع رنگ : {vanGoghObj[index].color}
                 </p>
                 <p className="text-sm font-semibold">
-                  نقاش : {mainArtsObj[index].artist}
+                  {vanGoghObj[index].price} میلیون تومان
                 </p>
               </div>
-              <div className="flex justify-between px-3 mb-7 mt-1">
-                <p className="text-sm font-semibold">
-                  {mainArtsObj[index].price} میلیون تومان
-                </p>
+              <div className="flex justify-end px-3 mb-7 mt-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className={`w-6 h-6 text-emerald-500 cursor-pointer hover:fill-emerald-300 ${liked.find((liked) => liked.id == mainArtsObj[index].id) && "fill-emerald-500"}`}
+                  className={`w-6 h-6 text-emerald-500 cursor-pointer hover:fill-emerald-300 ${
+                    liked.find((liked) => liked.id == vanGoghObj[index].id) &&
+                    "fill-emerald-500"
+                  }`}
                   onClick={() =>
                     handleLiked(
-                      mainArtsObj[index].id,
-                      mainArtsObj[index].name,
-                      mainArtsObj[index].image,
-                      mainArtsObj[index].category,
-                      mainArtsObj[index].artist,
+                      vanGoghObj[index].id,
+                      vanGoghObj[index].name,
+                      vanGoghObj[index].image,
+                      vanGoghObj[index].category,
+                      vanGoghObj[index].artist
                     )
                   }
                 >
@@ -122,4 +123,4 @@ const MainArts = () => {
     </div>
   )
 }
-export default MainArts
+export default Vangogh

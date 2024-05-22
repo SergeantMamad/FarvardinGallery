@@ -68,8 +68,8 @@ const Specific = () => {
         {Object.keys(specificObj).map((index) => {
           if (specificObj[index].specificCategory == specificCategory) {
             return (
-              <div className="min-w-[390px] min-h-[510px] bg-zinc-100 rounded-lg">
-                <div className="p-2 py-8 rounded-t-lg wall">
+              <div className="min-w-[390px] min-h-[510px] bg-zinc-100">
+                <div className="p-2 py-8 wall">
                   <img
                     src={`${specificObj[index].image}`}
                     className="w-[350px] h-[330px] object-contain mx-auto transition-all hover:scale-105 border-[10px] border-black bg-white shadow-xl"

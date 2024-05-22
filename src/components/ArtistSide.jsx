@@ -27,9 +27,9 @@ const ArtistSide = () => {
             </p>
           </div>
         </div>
-        <Link to="/upload">
+        <Link className="mt-5" to="/upload">
           <div
-            className={`flex items-center h-11 mt-5 px-4 w-[90%] mx-auto rounded-md cursor-pointer hover:bg-stone-700 transition-colors duration-500 ${
+            className={`flex items-center h-11 px-4 w-[90%] mx-auto rounded-md cursor-pointer hover:bg-stone-700 transition-colors duration-500 ${
               location.pathname == "/upload"
                 ? "bg-stone-700 text-white"
                 : "text-stone-400"
@@ -52,23 +52,31 @@ const ArtistSide = () => {
             <p className="text-lg font-semibold mr-4">فروش اثر</p>
           </div>
         </Link>
-        <div className="flex items-center h-11 px-4 w-[90%] mx-auto rounded-md cursor-pointer text-stone-400 hover:bg-stone-700 transition-colors duration-500">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            className="w-7 h-7 mt-[2px]"
+        <Link to="/showproducts">
+          <div
+            className={`flex items-center h-11 px-4 w-[90%] mx-auto rounded-md cursor-pointer hover:bg-stone-700 transition-colors duration-500 ${
+              location.pathname == "/showproducts"
+                ? "bg-stone-700 text-white"
+                : "text-stone-400"
+            }`}
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-            />
-          </svg>
-          <p className="text-lg font-semibold mr-4">اثر های در حال فروش</p>
-        </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-7 h-7 mt-[2px]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+              />
+            </svg>
+            <p className="text-lg font-semibold mr-4">اثر های در حال فروش</p>
+          </div>
+        </Link>
         <div className="flex items-center h-11 px-4 w-[90%] mx-auto rounded-md cursor-pointer text-stone-400 hover:bg-stone-700 transition-colors duration-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,23 +94,25 @@ const ArtistSide = () => {
           </svg>
           <p className="text-lg font-semibold mr-4">تنظیمات</p>
         </div>
-        <div className="flex items-center h-11 px-4 w-[90%] mx-auto rounded-md cursor-pointer text-red-700 hover:bg-stone-700 transition-colors duration-500 absolute bottom-4 right-[15px]">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="currentColor"
-            className="w-7 h-7 mt-[2px]"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
-            />
-          </svg>
-          <p className="text-lg font-semibold mr-4">خروج</p>
-        </div>
+        <Link to="/login">
+          <div className="flex items-center h-11 px-4 w-[90%] mx-auto rounded-md cursor-pointer text-red-700 hover:bg-stone-700 transition-colors duration-500 absolute bottom-4 right-[15px]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-7 h-7 mt-[2px]"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15"
+              />
+            </svg>
+            <p className="text-lg font-semibold mr-4">خروج</p>
+          </div>
+        </Link>
       </div>
     </div>
   )

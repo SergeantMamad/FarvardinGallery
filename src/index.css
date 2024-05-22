@@ -85,11 +85,9 @@ option:not([value=""]) {
   color: black;
 }
 
-
 .title {
   font-family: "Nastaliq";
 }
-
 
 .artsub {
   display: none;
@@ -173,12 +171,51 @@ option:not([value=""]) {
   background-size: cover;
 }
 
-input:not(:placeholder-shown) , textarea:not(:placeholder-shown) {
+input:not(:placeholder-shown),
+textarea:not(:placeholder-shown) {
   border-color: rgb(5 150 105);
 }
-
 
 .imagecontainer:hover p {
   opacity: 1;
   transition: all 0.3s ease-in;
+}
+
+.artistprofile {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url("/images/Netherlands.png");
+  background-repeat: none;
+  background-size: cover;
+}
+
+table {
+  border-collapse: separate;
+  overflow: hidden;
+  border-spacing: 0;
+  border-radius: 10px;
+  text-align: center;
+  th,
+  td {
+    padding: 20px;
+    vertical-align: middle;
+  }
+}
+
+tr:hover {
+  background: rgb(241, 241, 241);
+}
+
+.MuiSlider-track {
+  color: rgb(16 185 129)
+}
+
+.MuiSlider-thumb {
+  color: black
+}
+
+.MuiSlider-rail {
+  color: rgb(16 185 129)
 }
