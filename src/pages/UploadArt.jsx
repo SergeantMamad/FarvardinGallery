@@ -37,7 +37,7 @@ const UploadArt = () => {
       <div className="flex" dir="rtl">
         <ArtistSide />
         <div className="p-8 flex gap-5">
-          <div className="bg-stone-100 h-max w-[1100px] rounded-lg shadow-sm p-5">
+          <div className="bg-stone-100 h-max w-[1100px] rounded-lg shadow-md p-5 border border-gray-300/20">
             <p className="text-3xl font-bold text-emerald-500">اطلاعات کلی</p>
             <div className="flex items-center w-full mt-5 justify-around">
               <div className="flex flex-col gap-2 w-1/3">
@@ -51,7 +51,7 @@ const UploadArt = () => {
               </div>
               <div className="flex flex-col gap-2 w-1/4 mr-10">
                 <label className="text-right text-sm font-semibold">
-                  نوع اثر
+                  نوع اثرع
                 </label>
                 <select
                   ref={selectBoxArtRef}
@@ -159,7 +159,7 @@ const UploadArt = () => {
               ارسال
             </button>
           </div>
-          <div className="bg-stone-100 h-max w-[450px] rounded-lg shadow-sm p-5">
+          <div className="bg-stone-100 h-max w-[450px] rounded-lg shadow-md p-5 border border-gray-300/20">
             <p className="text-3xl font-bold text-emerald-500">عکس ها</p>
             <div class="flex items-center justify-center w-full mt-5">
               <label

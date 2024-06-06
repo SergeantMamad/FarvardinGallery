@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom"
 const ArtistSide = () => {
   const location = useLocation()
   return (
-    <div className="bg-black w-[300px] h-screen text-white relative">
+    <div className="bg-black w-[286px] h-screen text-white relative">
       <div className="flex flex-col gap-2">
         <p className="title mt-10 text-5xl text-center">گالری فروردین</p>
         <div className="flex px-4 w-[90%] mt-5 bg-stone-700 mx-auto rounded-md py-2 gap-6">
