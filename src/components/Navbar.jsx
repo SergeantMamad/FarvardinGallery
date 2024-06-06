@@ -7,7 +7,7 @@ const Navbar = () => {
   const [favPanel, setFavPanel] = useState(false)
   const { liked, setLiked } = useContext(LikeContext)
   return (
-    <div className="sticky top-0 w-full z-50 h-[80px] bg-black text-white shadow-2xl">
+    <div className="sticky top-0 w-full z-50 h-[80px] bg-black/95 text-white shadow-2xl backdrop-filter backdrop-blur-[20px]">
       <div className="max-w-[1600px] flex items-center justify-between mx-auto h-full">
         <Link to="/">
           <p className="title text-3xl">گالری فروردین</p>

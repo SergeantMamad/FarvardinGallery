@@ -16,6 +16,8 @@ import ShowPage from "./pages/ShowPage.jsx"
 import Navbar from "./components/Navbar.jsx"
 import ShowProducts from "./pages/ShowProducts.jsx"
 import Khatati from "./pages/Khatati.jsx"
+import Buy from "./pages/Buy.jsx"
+import ThankYou from "./pages/ThankYou.jsx"
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -28,6 +30,8 @@ const router = createBrowserRouter(
       <Route path="/showproducts" element={<ShowProducts />} />
       <Route path="/showpage" element={<ShowPage />} />
       <Route path="/khatati" element={<Khatati />} />
+      <Route path="/buy" element={<Buy />} />
+      <Route path="/thankyou" element={<ThankYou />} />
     </>
   )
 )
