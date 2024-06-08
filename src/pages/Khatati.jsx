@@ -143,7 +143,7 @@ const Khatati = () => {
                     <label>ثلث</label>
                     <input
                       type="checkbox"
-                      checked
+                      defaultChecked
                       className="accent-emerald-500"
                     />
                   </div>
@@ -159,7 +159,7 @@ const Khatati = () => {
                     <label>تعلیق</label>
                     <input
                       type="checkbox"
-                      checked
+                      defaultChecked
                       className="accent-emerald-500"
                     />
                   </div>
@@ -171,7 +171,7 @@ const Khatati = () => {
                     <label>ریحان</label>
                     <input
                       type="checkbox"
-                      checked
+                      defaultChecked
                       className="accent-emerald-500"
                     />
                   </div>

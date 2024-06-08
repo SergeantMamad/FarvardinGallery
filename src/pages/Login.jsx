@@ -20,7 +20,7 @@ const Login = () => {
           <p className="text-3xl font-bold text-emerald-500">وارد شوید</p>
           <div className={`w-full flex flex-col gap-10 mt-[100px]`}>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">نام کاربری</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="username">نام کاربری</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -38,13 +38,14 @@ const Login = () => {
                 </svg>
 
                 <input
+                  id="username"
                   placeholder="نام کاربری"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">کلمه عبور</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="password">کلمه عبور</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,6 +63,8 @@ const Login = () => {
                 </svg>
 
                 <input
+                  id="password"
+                  type="password"
                   placeholder="کلمه عبور"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />

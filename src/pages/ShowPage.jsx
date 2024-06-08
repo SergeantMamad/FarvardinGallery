@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Vangogh from "../components/Vangogh"
 import Similar from "../components/Similar"
+import { Link } from "react-router-dom"
 
 const ShowPage = () => {
   const [imageIndex, setimageIndex] = useState(1)
@@ -121,12 +122,12 @@ const ShowPage = () => {
               </div>
             </div>
             <div className="flex mt-12 justify-evenly gap-5 w-full">
-              <button className="font-bold text-emerald-500 border border-emerald-500 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-300 w-full">
+              <Link className="font-bold text-center text-emerald-500 border border-emerald-500 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-300 w-full" to="/buy">
                 خرید
-              </button>
-              <button className="font-bold text-stone-600 border border-stone-600 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-300 w-full">
+              </Link>
+              <Link className="font-bold text-center text-stone-600 border border-stone-600 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-300 w-full">
                 ارسال پیشنهاد
-              </button>
+              </Link>
             </div>
             <div className="border border-stone-200 w-full h-max mt-3 p-5 rounded-lg flex flex-col gap-2">
               <div className="flex gap-3 items-center">

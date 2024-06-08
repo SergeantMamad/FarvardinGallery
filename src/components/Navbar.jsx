@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Navbar = () => {
   const [login, setLogin] = useState(false)
   const [favPanel, setFavPanel] = useState(false)
-  const { liked, setLiked } = useContext(LikeContext)
+  const { liked } = useContext(LikeContext)
   return (
     <div className="sticky top-0 w-full z-50 h-[80px] bg-black/95 text-white shadow-2xl backdrop-filter backdrop-blur-[20px]">
       <div className="max-w-[1600px] flex items-center justify-between mx-auto h-full">

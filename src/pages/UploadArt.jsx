@@ -41,19 +41,21 @@ const UploadArt = () => {
             <p className="text-3xl font-bold text-emerald-500">اطلاعات کلی</p>
             <div className="flex items-center w-full mt-5 justify-around">
               <div className="flex flex-col gap-2 w-1/3">
-                <label className="text-right text-sm font-semibold">
+                <label htmlFor="name" className="text-right text-sm font-semibold">
                   نام اثر
                 </label>
                 <input
+                  id="name"
                   placeholder="نام اثر"
                   className="outline-none bg-neutral-50-50 py-2 px-4 rounded-lg border border-neutral-300 focus:border-emerald-600 transition-all duration-500"
                 />
               </div>
               <div className="flex flex-col gap-2 w-1/4 mr-10">
-                <label className="text-right text-sm font-semibold">
-                  نوع اثرع
+                <label htmlFor="type" className="text-right text-sm font-semibold">
+                  نوع اثر
                 </label>
                 <select
+                  id="type"
                   ref={selectBoxArtRef}
                   onChange={() => handelSelectBox(selectBoxArtRef)}
                   defaultValue={""}
@@ -72,11 +74,12 @@ const UploadArt = () => {
                 </select>
               </div>
               <div className="flex flex-col gap-2 w-1/4 mr-32">
-                <label className="text-right text-sm font-semibold">
+                <label htmlFor="size" className="text-right text-sm font-semibold">
                   اندازه
                 </label>
                 <div className="flex justify-between">
                   <input
+                    id="size"
                     placeholder="طول"
                     className="outline-none bg-neutral-50 py-2 px-4 rounded-lg border border-neutral-300 focus:border-emerald-600 transition-all duration-500 w-1/4"
                   />
@@ -100,25 +103,28 @@ const UploadArt = () => {
               </div>
             </div>
             <div className="flex flex-col gap-2 mt-4">
-              <label className="text-right text-sm font-semibold">
+              <label htmlFor="desc" className="text-right text-sm font-semibold">
                 توضیحات
               </label>
               <textarea
+                id="desc"
                 placeholder="توضیحات"
                 className="outline-none bg-neutral-50-50 py-2 px-4 rounded-lg border border-neutral-300 focus:border-emerald-600 transition-all duration-500 resize-none h-[300px]"
               />
             </div>
             <div className="flex justify-around mt-4">
               <div className="flex flex-col gap-2 mt-auto">
-                <label className="text-right text-sm font-semibold">آدرس</label>
+                <label className="text-right text-sm font-semibold" htmlFor="address">آدرس</label>
                 <textarea
+                  id="address"
                   placeholder="آدرس"
                   className="outline-none bg-neutral-50-50 py-2 px-4 rounded-lg border border-neutral-300 focus:border-emerald-600 transition-all duration-500 resize-none h-[120px]"
                 />
               </div>
               <div className="flex flex-col gap-2 w-1/3 mr-10">
-                <label className="text-right text-sm font-semibold">قیمت</label>
+                <label className="text-right text-sm font-semibold" htmlFor="price">قیمت</label>
                 <input
+                  id="price"
                   placeholder="قیمت"
                   className="outline-none bg-neutral-50-50 py-2 px-4 rounded-lg border border-neutral-300 focus:border-emerald-600 transition-all duration-500"
                 />
@@ -127,26 +133,29 @@ const UploadArt = () => {
                 <p className="text-right text-sm font-semibold">روش فروش</p>
                 <div className="flex justify-between h-1/3">
                   <div className="flex h-full items-center gap-3">
-                    <p className="text-right text-sm font-semibold">آنلاین</p>
+                    <label htmlFor="online" className="text-right text-sm font-semibold">آنلاین</label>
                     <input
+                      id="online"
                       type="radio"
                       name="art"
                       className="accent-emerald-500"
                     />
                   </div>
                   <div className="flex h-full items-center gap-3">
-                    <p className="text-right text-sm font-semibold">حضوری</p>
+                    <label htmlFor="hozori" className="text-right text-sm font-semibold">حضوری</label>
                     <input
+                      id="hozori"
                       type="radio"
                       name="art"
                       className="accent-emerald-500"
                     />
                   </div>
                   <div className="flex h-full items-center gap-3">
-                    <p className="text-right text-sm font-semibold">
+                    <label htmlFor="auction" className="text-right text-sm font-semibold">
                       مزایده ای
-                    </p>
+                    </label>
                     <input
+                      id="auction"
                       type="radio"
                       name="art"
                       className="accent-emerald-500"

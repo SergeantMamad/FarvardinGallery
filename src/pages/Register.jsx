@@ -76,7 +76,7 @@ const Register = () => {
             }`}
           >
             <div className="flex flex-col mt-[40px] gap-2">
-              <label className="mx-auto text-right w-[80%]">
+              <label className="mx-auto text-right w-[80%]" htmlFor="name">
                 نام و نام خانوادگی
               </label>
               <div className="relative flex justify-center">
@@ -95,13 +95,14 @@ const Register = () => {
                   />
                 </svg>
                 <input
+                  id="name"
                   placeholder="نام و نام خانوادگی"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto "
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">شماره تلفن</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="phone">شماره تلفن</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,13 +120,14 @@ const Register = () => {
                 </svg>
 
                 <input
+                  id="phone"
                   placeholder="شماره تلفن"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">نام کاربری</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="username">نام کاربری</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -143,13 +145,14 @@ const Register = () => {
                 </svg>
 
                 <input
+                  id="username"
                   placeholder="نام کاربری"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">کلمه عبور</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="password">کلمه عبور</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -167,13 +170,15 @@ const Register = () => {
                 </svg>
 
                 <input
+                  type="password"
+                  id="password"
                   placeholder="کلمه عبور"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">آدرس ایمیل</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="email">آدرس ایمیل</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -190,6 +195,8 @@ const Register = () => {
                   />
                 </svg>
                 <input
+                  id="email"
+                  type="email"
                   placeholder="آدرس ایمیل"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />
@@ -259,7 +266,7 @@ const Register = () => {
             }`}
           >
             <div className="flex flex-col mt-[20px] gap-2">
-              <label className="mx-auto text-right w-[80%]">
+              <label className="mx-auto text-right w-[80%]" htmlFor="nameartist">
                 نام و نام خانوادگی
               </label>
               <div className="relative flex justify-center">
@@ -278,13 +285,14 @@ const Register = () => {
                   />
                 </svg>
                 <input
+                  id="nameartist"
                   placeholder="نام و نام خانوادگی"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto "
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">شماره تلفن</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="phoneartist">شماره تلفن</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -302,13 +310,14 @@ const Register = () => {
                 </svg>
 
                 <input
+                  id="phoneartist"
                   placeholder="شماره تلفن"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">نام کاربری</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="usernameartist">نام کاربری</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -326,13 +335,14 @@ const Register = () => {
                 </svg>
 
                 <input
+                  id="usernameartist"
                   placeholder="نام کاربری"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">کلمه عبور</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="passwordartist">کلمه عبور</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -350,13 +360,15 @@ const Register = () => {
                 </svg>
 
                 <input
+                  id="passwordartist"
+                  type="password"
                   placeholder="کلمه عبور"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">آدرس ایمیل</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="emailartist">آدرس ایمیل</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -373,13 +385,15 @@ const Register = () => {
                   />
                 </svg>
                 <input
+                  type="email"
+                  id="emailartist"
                   placeholder="آدرس ایمیل"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"
                 />
               </div>
             </div>
             <div className="flex flex-col -mt-[25px] gap-2">
-              <label className="mx-auto text-right w-[80%]">شماره کارت</label>
+              <label className="mx-auto text-right w-[80%]" htmlFor="card">شماره کارت</label>
               <div className="relative flex justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -396,6 +410,7 @@ const Register = () => {
                   />
                 </svg>
                 <input
+                  id="card"
                   onInput={(e) => handleInput(e.target)}
                   placeholder="شماره کارت"
                   className="outline-none bg-neutral-50-50 py-2 px-8 rounded-lg border border-neutral-300 w-[80%] focus:border-emerald-600 transition-all duration-500 mx-auto"

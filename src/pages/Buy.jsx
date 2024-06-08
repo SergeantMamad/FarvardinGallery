@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
+import { useNavigate } from "react-router-dom"
 
 const Buy = () => {
+  const navigate = useNavigate()
   const [fields, setFields] = useState({
     name: "",
     email: "",
@@ -55,10 +57,11 @@ const Buy = () => {
             <p className="text-4xl font-semibold">اطلاعات پرداخت</p>
             <div className="flex flex-col">
               <div className="flex flex-col gap-4">
-                <label className="text-right opacity-60">
+                <label htmlFor="name" className="text-right opacity-60">
                   نام و نام خانوادگی
                 </label>
                 <input
+                  id="name"
                   onInput={(e) => {
                     setFields((prevFields) => ({
                       ...prevFields,
@@ -73,14 +76,16 @@ const Buy = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-col gap-4">
-                <label className="text-right opacity-60">آدرس ایمیل</label>
+                <label htmlFor="email" className="text-right opacity-60">آدرس ایمیل</label>
                 <input
+                  id="email"
                   onInput={(e) => {
                     setFields((prevFields) => ({
                       ...prevFields,
                       email: e.target.value,
                     }))
                   }}
+                  type="email"
                   value={fields.email}
                   placeholder="آدرس ایمیل"
                   className="outline-none bg-neutral-50-50 py-2 px-2 rounded-lg border border-neutral-300 focus:border-emerald-600 transition-all duration-500"
@@ -89,8 +94,9 @@ const Buy = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-col gap-4">
-                <label className="text-right opacity-60">شماره تلفن</label>
+                <label htmlFor="phone" className="text-right opacity-60">شماره تلفن</label>
                 <input
+                  id="phone"
                   onInput={(e) => {
                     setFields((prevFields) => ({
                       ...prevFields,
@@ -105,8 +111,9 @@ const Buy = () => {
             </div>
             <div className="flex flex-col">
               <div className="flex flex-col gap-4">
-                <label className="text-right opacity-60">آدرس محل سکونت</label>
+                <label htmlFor="address" className="text-right opacity-60">آدرس محل سکونت</label>
                 <input
+                  id="address"
                   onInput={(e) => {
                     setFields((prevFields) => ({
                       ...prevFields,
@@ -178,7 +185,7 @@ const Buy = () => {
                 />
               </div>
             </div>
-            <button disabled={!Object.keys(fields).every((index) => (fields[index] !== ""))} className="font-bold text-emerald-500 border border-emerald-500 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-300 w-full disabled:border-gray-500 disabled:text-gray-500 disabled:cursor-not-allowed">
+            <button disabled={!Object.keys(fields).every((index) => (fields[index] !== ""))} className="font-bold text-emerald-500 border border-emerald-500 px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-stone-300 w-full disabled:border-gray-500 disabled:text-gray-500 disabled:cursor-not-allowed" onClick={() =>navigate('/thankyou')}>
               ثبت سفارش
             </button>
           </div>
