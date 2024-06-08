@@ -1,8 +1,17 @@
-# React + Vite
+# Farvardin Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I created this project for my university final exam (using react and tailwind ofc). I focused on design more than anything else but it has some features.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Art liking system
+* Preview uploaded pics in art upload page
+* Some cool css animations
+* Little but cool design touches (Search options in "Khatati" page, Table filter option, etc...) that you can see in pictures i provided below
+
+## Used Libraries (Beside React)
+* [React Router](https://reactrouter.com)
+* [Mui](https://mui.com/)
+* [React Starfield](https://www.npmjs.com/package/react-starfield)
+
+## Pics
