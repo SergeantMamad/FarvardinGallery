@@ -15,6 +15,7 @@ I created this project for my university final exam (using react and tailwind of
 * [React Starfield](https://www.npmjs.com/package/react-starfield)
 
 ## Pics
+![Screenshot 2024-06-08 at 13-12-15 Vite React-min](https://github.com/SergeantMamad/FarvardinGallery/assets/89344904/96de4845-6c4c-4265-8fd1-a104da321ea5)
 ![Screenshot 2024-06-08 at 13-12-36 Vite React](https://github.com/SergeantMamad/FarvardinGallery/assets/89344904/79328ff7-9691-4a4f-9a77-ef9767758119)
 ![Screenshot 2024-06-08 at 13-16-28 Vite React-min](https://github.com/SergeantMamad/FarvardinGallery/assets/89344904/324b17f5-04c8-46bd-86ff-4630a656a29c)
 ![Screenshot 2024-06-08 at 13-12-36 Vite React-min](https://github.com/SergeantMamad/FarvardinGallery/assets/89344904/990b2e9f-a5e2-427b-8d17-350ef05d5673)
