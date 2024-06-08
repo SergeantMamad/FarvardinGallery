@@ -15,3 +15,4 @@ I created this project for my university final exam (using react and tailwind of
 * [React Starfield](https://www.npmjs.com/package/react-starfield)
 
 ## Pics
+![Screenshot 2024-06-08 at 13-12-15 Vite React](https://github.com/SergeantMamad/FarvardinGallery/assets/89344904/820a405c-ea21-4da3-aa31-d09cd5562f7a)
